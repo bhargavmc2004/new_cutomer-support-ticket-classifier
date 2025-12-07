@@ -1,0 +1,5 @@
+# System packages required by Streamlit Cloud
+# These ensure Python can properly compile certain dependencies
+
+python3-dev
+build-essential
