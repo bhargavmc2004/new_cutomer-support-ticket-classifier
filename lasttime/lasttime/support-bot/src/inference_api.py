@@ -7,7 +7,11 @@ import json
 import re
 import requests
 from pathlib import Path
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except Exception:
+    def load_dotenv(*args, **kwargs):
+        return False
 from huggingface_hub import InferenceClient
 
 # Load environment variables
