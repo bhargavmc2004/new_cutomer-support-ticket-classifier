@@ -7,30 +7,22 @@ import json
 import re
 import requests
 from pathlib import Path
-try:
-    from dotenv import load_dotenv
-except Exception:
-    def load_dotenv(*args, **kwargs):
-        return False
 from huggingface_hub import InferenceClient
+try:
+    import streamlit as st
+except Exception:
+    st = None
 
 # Load environment variables
 project_root = Path(__file__).parent.parent
-env_path = project_root / '.env'
-if env_path.exists():
-    load_dotenv(env_path)
 
 # Get API token from environment
-HF_TOKEN = os.getenv('HF_TOKEN') or os.getenv('HUGGINGFACEHUB_API_TOKEN')
-if not HF_TOKEN:
-    try:
-        import streamlit as st
-        HF_TOKEN = st.secrets.get('HF_TOKEN') or st.secrets.get('HUGGINGFACEHUB_API_TOKEN')
-    except Exception:
-        pass
+HF_TOKEN = None
+if st is not None:
+    HF_TOKEN = st.secrets.get('HF_TOKEN') or st.secrets.get('HUGGINGFACEHUB_API_TOKEN')
 
 if not HF_TOKEN:
-    print("[WARNING] No HF token found in environment or Streamlit secrets.")
+    print("[WARNING] No HF token found in Streamlit secrets.")
 
 # Model fallback sequence - try in order until one works
 MODEL_OPTIONS = [
