@@ -1,0 +1,16 @@
+{
+  "label_to_id": {
+    "Billing inquiry": 0,
+    "Cancellation request": 1,
+    "Product inquiry": 2,
+    "Refund request": 3,
+    "Technical issue": 4
+  },
+  "id_to_label": {
+    "0": "Billing inquiry",
+    "1": "Cancellation request",
+    "2": "Product inquiry",
+    "3": "Refund request",
+    "4": "Technical issue"
+  }
+}

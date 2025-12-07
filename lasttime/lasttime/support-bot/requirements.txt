@@ -1,0 +1,25 @@
+# Core dependencies
+streamlit
+huggingface-hub
+python-dotenv
+pandas
+scikit-learn
+
+# ML/AI frameworks
+torch>=2.0
+transformers>=4.35
+datasets
+accelerate
+
+# Optional ML packages
+peft
+bitsandbytes        # optional (for 8-bit/4-bit)
+sentencepiece       # if using T5-like models
+evaluate
+wandb                # optional for tracking
+
+# Utilities
+numpy
+
+# Web frameworks (optional)
+flask               # if you prefer Flask

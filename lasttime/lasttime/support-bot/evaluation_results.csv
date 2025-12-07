@@ -1,0 +1,49 @@
+ticket,expected,predicted,Match
+I was charged twice this month.,billing,billing,True
+My credit card was charged incorrectly.,billing,billing,True
+I need a refund for my last purchase.,billing,billing,True
+Why was I charged $50 when the price was $30?,billing,billing,True
+I want to cancel my subscription and get a refund.,billing,billing,True
+The billing amount doesn't match what I agreed to.,billing,billing,True
+I was charged for a service I didn't use.,billing,billing,True
+Can you explain the charges on my invoice?,billing,billing,True
+I need to update my payment method.,billing,billing,True
+There's an unauthorized charge on my account.,billing,billing,True
+I want to dispute a charge from last week.,billing,billing,True
+My subscription auto-renewed but I wanted to cancel.,billing,billing,True
+The app crashes when I upload a large file.,bug,bug,True
+I can't log in - it says my password is wrong but I know it's correct.,bug,account,False
+The search function doesn't return any results.,bug,bug,True
+The page keeps loading forever and never finishes.,bug,bug,True
+"When I click submit, nothing happens.",bug,bug,True
+The app freezes whenever I try to export data.,bug,bug,True
+I'm getting an error message that says 'Internal Server Error'.,bug,bug,True
+The notification system isn't working - I'm not receiving alerts.,bug,bug,True
+The dashboard shows incorrect data.,bug,bug,True
+The mobile app crashes on startup.,bug,bug,True
+I can't upload images - it says file format not supported.,bug,feature,False
+The sync feature is broken - my changes aren't saving.,bug,bug,True
+Can you add a dark mode?,feature,feature,True
+I'd like to request a feature to export reports to PDF.,feature,feature,True
+Is it possible to add two-factor authentication?,feature,feature,True
+Can you add the ability to schedule posts in advance?,feature,feature,True
+I wish there was a way to filter search results by date.,feature,feature,True
+Would it be possible to add keyboard shortcuts?,feature,feature,True
+Can you implement a bulk delete feature?,feature,feature,True
+I'd love to see a mobile app version of this.,feature,feature,True
+Can you add integration with Google Calendar?,feature,feature,True
+Is there a way to customize the dashboard layout?,feature,ERROR,False
+Can you add support for multiple languages?,feature,ERROR,False
+I'd like to request a feature to share projects with team members.,feature,ERROR,False
+I forgot my password.,account,ERROR,False
+I can't access my account - it says my email doesn't exist.,account,ERROR,False
+I want to change my email address.,account,ERROR,False
+How do I delete my account?,account,ERROR,False
+I need to update my profile information.,account,ERROR,False
+My account was suspended and I don't know why.,account,ERROR,False
+I want to merge two accounts into one.,account,ERROR,False
+I can't verify my email address.,account,ERROR,False
+I need to recover my account - I lost access to my email.,account,ERROR,False
+Can you help me change my username?,account,ERROR,False
+I want to transfer my account to a different email.,account,ERROR,False
+My account settings keep resetting to default.,account,ERROR,False
